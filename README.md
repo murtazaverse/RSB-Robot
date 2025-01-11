@@ -1,63 +1,68 @@
-# Template: Python - Minimal
+# Python - Minimal Template Guide
 
-This template leverages the new [Python framework](https://github.com/robocorp/robocorp), the [libraries](https://github.com/robocorp/robocorp/blob/master/docs/README.md#python-libraries) from to same project as well.
+This guide introduces a basic template for Python projects, designed to help you get started quickly and efficiently. It includes a straightforward project structure, pre-configured logging, and task management tools. Essential libraries are already included, so you can focus on your project without worrying about initial setup.
 
-The template provides you with the basic structure of a Python project: logging out of the box and controlling your tasks without fiddling with the base Python stuff. The environment contains the most used libraries, so you do not have to start thinking about those right away. 
+👉 You can explore additional templates through our tools or on our [Portal](https://robocorp.com/portal/tag/template).
 
-👉 Other templates are available as well via our tooling and on our [Portal](https://robocorp.com/portal/tag/template)
+---
 
-## Architectural Model
-![image](https://github.com/user-attachments/assets/ec14a54c-ef61-4727-9ea6-04136cd1884c)
+## Overview
+This template uses the [Python framework](https://github.com/robocorp/robocorp) and related [libraries](https://github.com/robocorp/robocorp/blob/master/docs/README.md#python-libraries) to provide a reliable foundation for your project.
 
-## Running
+### Architectural Model
+![Diagram](https://github.com/user-attachments/assets/ec14a54c-ef61-4727-9ea6-04136cd1884c)
 
-#### VS Code
-1. Get [Robocorp Code](https://robocorp.com/docs/developer-tools/visual-studio-code/extension-features) -extension for VS Code.
-1. You'll get an easy-to-use side panel and powerful command-palette commands for running, debugging, code completion, docs, etc.
+---
 
-#### Command line
+## How to Run the Project
 
-1. [Get RCC](https://github.com/robocorp/rcc?tab=readme-ov-file#getting-started)
-1. Use the command: `rcc run`
+### Using VS Code
+1. Install the [Robocorp Code extension](https://robocorp.com/docs/developer-tools/visual-studio-code/extension-features).
+2. Use the side panel and command palette for running, debugging, and accessing code completion and documentation.
+
+### Using the Command Line
+1. Download [RCC](https://github.com/robocorp/rcc?tab=readme-ov-file#getting-started).
+2. Run the command: `rcc run`.
+
+---
 
 ## Results
 
-🚀 After running the bot, check out the `log.html` under the `output` -folder.
+🚀 After running, check the `log.html` file located in the `output` folder.
 
-## Dependencies
+---
 
-We strongly recommend getting familiar with adding your dependencies in [conda.yaml](conda.yaml) to control your Python dependencies and the whole Python environment for your automation.
+## Managing Dependencies
+
+We recommend adding your project dependencies to the [conda.yaml](conda.yaml) file. This helps manage the Python environment and ensures consistency across different machines.
 
 <details>
-  <summary>🙋‍♂️ "Why not just pip install...?"</summary>
+  <summary>Why use conda.yaml?</summary>
 
-Think of [conda.yaml](conda.yaml) as an equivalent of the requirements.txt, but much better. 👩‍💻 With `conda.yaml`, you are not just controlling your PyPI dependencies; you control the complete Python environment, which makes things repeatable and easy.
+Think of `conda.yaml` as an improved version of `requirements.txt`. It manages not only your Python packages but also the entire Python environment. Here’s why it’s better:
 
-👉 You will probably need to run your code on another machine quite soon, so by using `conda.yaml`:
-- You can avoid `Works on my machine` -cases
-- You do not need to manage Python installations on all the machines
-- You can control exactly which version of Python your automation will run on 
-  - You'll also control the pip version to avoid dep. resolution changes
-- No need for venv, pyenv, ... tooling and knowledge sharing inside your team.
-- Define dependencies in conda.yaml, let our tooling do the heavy lifting.
-- You get all the content of [conda-forge](https://prefix.dev/channels/conda-forge) without any extra tooling
+- Ensures your project runs seamlessly on other machines.
+- Avoids issues with Python installations across devices.
+- Lets you specify the exact Python and pip versions, preventing dependency conflicts.
+- Removes the need for additional tools like `venv` or `pyenv`.
+- Provides access to [conda-forge](https://prefix.dev/channels/conda-forge), simplifying dependency management.
 
-> Dive deeper with [these](https://github.com/robocorp/rcc/blob/master/docs/recipes.md#what-is-in-condayaml) resources.
+> Learn more with [these resources](https://github.com/robocorp/rcc/blob/master/docs/recipes.md#what-is-in-condayaml).
 
 </details>
-<br/>
 
-> The full power of [rpaframework](https://robocorp.com/docs/python/rpa-framework) -libraries is also available on Python as a backup while we implement the new Python libraries.
+---
 
-## What now?
+## Additional Tools and Resources
 
-🚀 Now, go get'em
+- Full support for [rpaframework](https://robocorp.com/docs/python/rpa-framework) is included while the new Python libraries are being implemented.
+- Start writing Python confidently—AI tools like Robocorp ReMark 💬 are available to assist you: [Try it here](https://chat.robocorp.com).
 
-Start writing Python and remember that the AI/LLM's out there are getting really good and creating Python code specifically.
+For more information:
+- Visit the [Robocorp Documentation](https://robocorp.com/docs).
+- Browse more examples on the [Portal](https://robocorp.com/portal).
+- Follow our main [Robocorp repository](https://github.com/robocorp/robocorp) for updates and development progress.
 
-👉 Try out [Robocorp ReMark 💬](https://chat.robocorp.com)
+---
 
-For more information, do not forget to check out the following:
-- [Robocorp Documentation -site](https://robocorp.com/docs)
-- [Portal for more examples](https://robocorp.com/portal)
-- Follow our main [robocorp -repository](https://github.com/robocorp/robocorp) as it is the main location where we developed the libraries and the framework.
+🚀 Happy Coding! Start your project today and explore the possibilities.
