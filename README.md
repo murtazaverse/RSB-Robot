@@ -10,7 +10,15 @@ This guide introduces a basic template for Python projects, designed to help you
 This template uses the [Python framework](https://github.com/robocorp/robocorp) and related [libraries](https://github.com/robocorp/robocorp/blob/master/docs/README.md#python-libraries) to provide a reliable foundation for your project.
 
 ### Architectural Model
-![Diagram](https://github.com/user-attachments/assets/ec14a54c-ef61-4727-9ea6-04136cd1884c)
+1. Initiate the Bot: Start the automation process.
+2. Navigate to Website: Access the desired website.
+3. Authenticate User: Log in using credentials.
+4. Retrieve Excel Data: Download the required Excel file.
+5. Process Excel File: Open and read the contents of the file.
+6. Populate and Submit Form: Use data from the Excel file to complete and submit an online form.
+7. Generate PDF Report: Export the results in PDF format.
+8. End Session: Log out of the website.
+9. Complete Process: Conclude the automation.
 
 ---
 
